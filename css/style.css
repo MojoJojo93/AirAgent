@@ -1,0 +1,2186 @@
+/* ========================================================================== 01. GENERAL STYLE ========================================================================== */
+ body {
+     font-family: 'Hiragino Mincho Pro', 'MS PMincho', serif;
+     font-size: 16px;
+     line-height: 20px;
+     color: #69696E;
+     font-weight: 400;
+     -webkit-font-smoothing: antialiased;
+     padding: 0;
+     margin: 0;
+}
+ .main-container {
+     overflow: hidden;
+}
+ section{
+     position: relative;
+     overflow: hidden;
+}
+
+
+ul{line-height:200%;}
+html{font-size:100%;} 
+@media(min-width:60em){html{font-size: 100%}}
+html{font-size:110%;} 
+@media(min-width:60em){html{font-size: 90%}}
+
+
+
+/*------------------------------------------*/
+/* Links 
+/*------------------------------------------*/
+ a, a:link, a:visited, a:hover, a:active {
+     color: #439fe0;
+     text-decoration: none;
+     outline: 0;
+     -webkit-transition: all 0.25s ease-out;
+     -moz-transition: all 0.25s ease-out;
+     -ms-transition: all 0.25s ease-out;
+     -o-transition: all 0.25s ease-out;
+     transition: all 0.25s ease-out;
+}
+ a.inverse, .inverse a, i.inverse {
+     color: #ffffff !important;
+}
+/*------------------------------------------*/
+/* Blockquote 
+/*------------------------------------------*/
+ blockquote {
+     border-left: none;
+     padding: 0;
+     margin: 0;
+     font-size: 16px;
+     line-height: 16px;
+     text-transform: none;
+}
+
+/*------------------------------------------------------------------*/
+/* Internet Explorer 10 in Windows 8 and Windows Phone 8 Bug fix 
+/*-----------------------------------------------------------------*/
+ @-webkit-viewport {
+     width: device-width;
+}
+ @-moz-viewport {
+     width: device-width;
+}
+ @-ms-viewport {
+     width: device-width;
+}
+ @-o-viewport {
+     width: device-width;
+}
+ @viewport {
+     width: device-width;
+}
+/* ========================================================================== 02. TYPOGRAPHY ========================================================================== */
+/* set margin for optimize vertical-align-middle */
+ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .lead {
+     margin-top: 0;
+     margin-bottom: 10px;
+}
+ h1, .h1 {
+     font-weight: 900;
+     font-size: 48px;
+     line-height: 56px;
+     text-shadow: 0 1px 2px rgba(0,0,0,.1);
+     color:#FFF;
+}
+ h2, .h2 {
+     font-weight: 900;
+     font-size: 42px;
+     line-height: 46px;
+     color:#FFF;
+}
+ h3, .h3 {
+     font-weight: 400;
+     font-size: 36px;
+     line-height: 38px;
+     color:#FFF; 
+}
+ h4, .h4 {
+     font-weight: 900;
+     font-size: 26px;
+     line-height: 30px;
+}
+ h5, .h5{
+     font-weight: 700;
+     font-size: 20px;
+     line-height: 24px;
+}
+ p {
+     line-height: 20px;
+     font-size:120%;
+     line-height:1.2;
+}
+ .p-opacity {
+     opacity: 0.7;
+}
+ strong, b {
+     font-weight: 900;
+}
+ .lead {
+     font-size: 24px;
+     line-height: 26px;
+     font-weight: 400;
+}
+ .lead strong, .lead b {
+     font-weight: 700;
+}
+/*------------------------------------------------------------------*/
+/* Lato Font Weight 
+/*-----------------------------------------------------------------*/
+ .f-w-300 {
+     font-weight: 300;
+}
+ .f-w-400 {
+     font-weight: 400;
+}
+ .f-w-700 {
+     font-weight: 700;
+}
+ .f-w-900 {
+     font-weight: 900;
+}
+/* ========================================================================== 03. BACKGROUNDS ========================================================================== */
+/*------------------------------------------*/
+/* Background Images for demos 
+/*------------------------------------------*/
+ .bg-img {
+   /*  background: url(../images/4.jpg) no-repeat center center scroll; */
+     -webkit-background-size: cover;
+     -moz-background-size:cover;
+     background-size: cover;
+	 
+}
+ .bg-parallax {
+     background: transparent;
+}
+
+/* ========================================================================== 04. BUTTONS ========================================================================== */
+ .btn, a.btn {
+     display: inline-block;
+     color: #ffffff;
+     padding: 11px 18px;
+     margin-bottom: 7px;
+     margin-right: 5px;
+     font-size: 15px;
+     font-weight: 900;
+     letter-spacing: 1px;
+     vertical-align: middle;
+     white-space: pre-line;
+     text-align: center;
+     -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+     border-radius: 4px;
+     cursor: pointer;
+     -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+     -ms-transition: all 0.3s ease-out;
+     -o-transition: all 0.3s ease-out;
+     transition: all 0.3s ease-out;
+}
+ .btn:focus, a.btn:focus, .btn:hover, a.btn:hover, .btn.active:focus, a.btn.active:focus, .btn:active:focus, a.btn:active:focus {
+     color: #fff;
+     outline: none;
+}
+ .btn-md, a.btn-md {
+     padding: 8px 25px 8px 25px;
+     font-size: 24px;
+}
+ .btn-lg, a.btn-lg {
+     padding: 25px 60px;
+     font-size: 18px;
+}
+/*------------------------------------------*/
+/* Menu Buttons 
+/*------------------------------------------*/
+ .btn-nav, a.btn-nav, .navbar-nav>li>a.btn-nav {
+     color: #ffffff;
+     margin-right: 0;
+     margin-bottom: 0;
+     opacity: 1 !important;
+     -webkit-transition: all 0.5s ease-in-out;
+     -moz-transition: all 0.5s ease-in-out;
+     -o-transition: all 0.5s ease-in-out;
+     transition: all 0.5s ease-in-out;
+}
+ .active .btn-nav {
+     background-color: #525e6c !important;
+}
+ .cta-header .active .btn-blue.btn-nav {
+     background-color: #439FE0 !important;
+}
+ .cta-header .active .btn-nav.btn-green {
+     background-color: #56B68B !important;
+}
+ .cta-header .active .btn-nav.btn-yellow {
+     background-color: #f1c40f !important;
+}
+ .btn.btn-border {
+     background-color: transparent !important;
+}
+
+/*------------------------------------------*/
+/* Green Buttons 
+/*------------------------------------------*/
+ .btn-green, a.inverse.btn-green, .inverse a.btn-green {
+     background-color: Transparent;
+}
+ .btn.btn-green {
+     border: 6px solid #FFF;
+}
+/*------------------------------------------*/
+/* Gray Buttons 
+/*------------------------------------------*/
+ .btn-gray, a.inverse.btn-gray, .inverse a.btn-gray {
+     background-color: Transparent;
+}
+ .btn.btn-gray {
+     border: 6px solid #FFF;
+}
+ .btn.btn-gray:hover {
+      background-color: #bdbdbd;
+}
+/*------------------------------------------*/
+/* Ghost-White Buttons 
+/*------------------------------------------*/
+ .btn-ghost {
+     background-color: transparent;
+     border: 3px solid #fff;
+     color: #fff;
+}
+ .btn-ghost:hover {
+     background-color: #fff;
+     color: #69696E!important;
+}
+ .btn-white {
+     background-color: #fff;
+     border: 3px solid #fff;
+     color: #69696E!important;
+}
+ .btn-white:hover {
+     background-color: transparent;
+     color: #fff!important;
+}
+/*------------------------------------------*/
+/* Back to Top Button 
+/*------------------------------------------*/
+ .top {
+     display: inline-block;
+     height: 60px;
+     width: 60px;
+     position: fixed;
+     bottom: 30px;
+     right: 30px;
+     z-index: 10;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    /* image replacement properties */
+     overflow: hidden;
+     text-indent: 100%;
+     white-space: nowrap;
+     background: #439FE0 url("../images/top-arrow.svg") no-repeat center 50%;
+     visibility: hidden;
+     opacity: 0;
+     -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+     -moz-transition: opacity .3s 0s, visibility 0s .3s;
+     transition: opacity .3s 0s, visibility 0s .3s;
+}
+ .top.is-visible, .top.fade-out, .no-touch .top:hover {
+     -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+     -moz-transition: opacity .3s 0s, visibility 0s 0s;
+     transition: opacity .3s 0s, visibility 0s 0s;
+}
+ .top.is-visible {
+    /* the button becomes visible */
+     visibility: visible;
+     opacity: 1;
+}
+ .top.fade-out {
+    /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+     opacity: .5;
+}
+ .no-touch .top:hover {
+     background-color: #e86256;
+     opacity: 1;
+}
+/* ========================================================================== 05. FORMS ========================================================================== */
+ .form-control {
+     background: #e8ebed;
+     color: #657380;
+     font-size: 22px;
+     font-weight: 700;
+     padding: 16px;
+     width:100%;
+     height: auto;
+     outline: 0;
+     border: 2px solid #e8ebed;
+     box-shadow: none;
+     -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+     -ms-transition: all 0.2s;
+     -o-transition: all 0.2s;
+     transition: all 0.2s;
+}
+ .form-control:focus {
+     background: #ffffff;
+     border-color: #d4d9dd;
+     box-shadow: none;
+}
+ .form-white .form-control{
+     border: 6px solid #fff;
+     background-color: transparent;
+     color: #FFFFFF;
+     -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+     border-radius: 14px;
+}
+
+ .form-white .form-control:focus {
+     border-color: #ffffff;
+}
+ .form-horizontal .control-label {
+     padding-top: 14px;
+}
+ .form-group button {
+    /* width: 100%; */
+    float: right;
+    border-radius: 14px;
+}
+ .form-inline .form-group, .form-inline .form-group input {
+     margin-bottom: 2px;
+}
+ .form-inline button {
+     font-size: 15px;
+     font-weight: 900;
+     padding: 12px 25px;
+     vertical-align: top;
+     text-transform: uppercase;
+     -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+     border-radius: 2px;
+}
+ .form-inline.double-input .form-group {
+     width: 100%;
+}
+ .form-inline.double-input .form-control {
+     width: 49%;
+}
+ .form-inline.double-input button {
+     width: 99%;
+}
+ .checkbox label, .radio label {
+     font-size: 15px;
+}
+ input[type=checkbox], input[type=radio] {
+     margin-top: 6px;
+}
+ .input-group-addon {
+     padding: 6px 20px;
+     font-size: 25px;
+     font-weight: 400;
+     line-height: 1;
+     color: #555;
+     text-align: center;
+     background-color: #e8ebed;
+     border: 2px solid #e8ebed;
+     border-radius: 4px;
+}
+ textarea {
+     resize:vertical;
+}
+ .form-inline .btn {
+     padding: 14px 25px 15px;
+}
+
+
+
+
+
+ .img-thumbnail {
+     border: 1px solid #EFF1F4;
+}
+
+ .p-y {
+     padding-top: 30px !important;
+     padding-bottom: 30px !important;
+}
+ .p-y-lg {
+     padding-top: 120px !important;
+     padding-bottom: 120px !important;
+}
+/* centering vertically section*/
+ .vertical-center-abs, .vertical-center-rel{
+     top: 50%;
+     -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+     -o-transform: translateY(-50%);
+     -ms-transform: translateY(-50%);
+     transform: translateY(-50%);
+}
+ .vertical-center-abs {
+     position: absolute;
+}
+ .vertical-center-rel {
+     position: relative;
+	 margin: 0 auto;
+     width: 80%;
+}
+
+
+/* centering vertically section*/
+ .vertical-center-abs1, .vertical-center-rel1{
+     top: 32%;
+     -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+     -o-transform: translateY(-50%);
+     -ms-transform: translateY(-50%);
+     transform: translateY(-50%);
+}
+ .vertical-center-abs1 {
+     position: absolute;
+}
+ .vertical-center-rel1 {
+     position: relative;
+	 margin: 0 auto;
+     width: 80%;
+}
+#contver1{     position: relative;
+	 margin: 0 auto;
+     width: 80%;}
+
+#contver2{   position: relative;
+	 margin: 0 auto;
+     width: 80%;}
+
+
+
+/* centering vertically and horizontally */
+ .vh-center {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     margin-right: -50%;
+     -webkit-transform: translate (-50%, -50%);
+     -moz-transform: translate (-50%, -50%);
+     -o-transform: translate (-50%, -50%);
+     -ms-transform: translate (-50%, -50%);
+     transform: translate (-50%, -50%);
+}
+/* centering vertically content */
+ .y-middle {
+     display: -webkit-flex;
+     display: -moz-flex;
+     display: -ms-flexbox;
+     display: flex;
+     align-items: center;
+     -webkit-align-items: center;
+     justify-content: center;
+     -webkit-justify-content: center;
+     flex-direction: row;
+     -webkit-flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+/* ========================================================================== 09. HERO SECTION ========================================================================== */
+/*------------------------------------------*/
+/* Hero General 
+/*------------------------------------------*/
+ .hero {
+     height: 950px;
+}
+ .hero.height-800, .hero.height-800-fix {
+     height: 800px;
+}
+ .hero .lead {
+     font-weight: 700;
+     color:#FFF; 
+}
+ .hero .btn a {
+     font-size: 17px;
+     color: #ffffff;
+}
+ .hero p.small a {
+     font-size: 15px;
+}
+ .hero h1 {
+     margin-bottom: 20px;
+     color:#FFF;
+}
+/*------------------------------------------*/
+/* Hero Closeup 
+/*------------------------------------------*/
+ .closeup-box {
+     position: absolute;
+     bottom: 0;
+     width: 50%;
+}
+ .closeup-box img {
+     float: right;
+     height: 650px;
+}
+ .closeup-box.closeup-right {
+     right: 0;
+}
+ .closeup-box.closeup-right img {
+     float: left;
+}
+/*------------------------------------------*/
+/* Hero with Lists 
+/*------------------------------------------*/
+ .hero .list-unstyled li {
+     font-size: 21px;
+     margin-bottom: 10px;
+     font-weight: 700;
+}
+ .hero .list-unstyled li>i {
+     font-size: 32px;
+     font-weight: 700;
+     vertical-align: sub;
+     margin-right: 5px;
+}
+/*------------------------------------------*/
+/* Hero Dashboard-Img 
+/*------------------------------------------*/
+ .dashboard-box {
+     position: absolute;
+     bottom: -50px;
+     width: 50%;
+}
+ .dashboard-box.dashboard-right {
+     right: 0;
+}
+ .dashboard-box img {
+     height: 600px;
+     padding-left:20px;
+}
+ .owl-dashboard .owl-controls {
+     position: absolute;
+     bottom: 102%;
+     width: 100%;
+}
+ .owl-dashboard .owl-controls .owl-pagination {
+     margin: 0 auto;
+}
+/*------------------------------------------*/
+/* Hero Devices/Countdown 
+/*------------------------------------------*/
+ .hero.hero-devices {
+     height: auto;
+     padding-top: 140px;
+     padding-bottom: 80px;
+}
+ .hero.hero-devices .app-image {
+     margin-top: 10px;
+}
+ .hero.hero-countdown {
+     height: auto;
+     padding-top: 160px;
+     padding-bottom: 100px;
+}
+/*------------------------------------------*/
+/* Hero Leadbox 
+/*------------------------------------------*/
+ .hero-leadbox {
+     height: auto;
+     padding-top: 150px;
+     padding-bottom: 100px;
+}
+ .hero-leadbox .form-horizontal {
+     padding: 30px 40px 10px;
+     border-radius: 5px;
+     box-shadow: -2px -2px 6px 0 rgba(0,0,0,.1);
+     background-color: #525e6c;
+     background-color: rgba(0, 0, 0, 0.4);
+}
+ .hero-leadbox .form-horizontal.form-2col {
+     padding: 40px 40px 20px;
+}
+ .hero-leadbox h5 {
+     font-size: 20px;
+     font-weight: 900;
+}
+ .hero-leadbox .form-group.w-50 input {
+     display: inline-block;
+     width: 49.5%;
+}
+ .hero-leadbox .feature-box i {
+     font-size: 50px;
+     font-weight: 400;
+     margin-right: 10px;
+}
+ .hero-leadbox .feature-box h5, .hero-leadbox .feature-box p {
+     margin-left: 80px;
+}
+ .hero-leadbox .feature-box h5 {
+     margin-bottom: 5px;
+}
+ .hero-leadbox .form-group button.picker__button--today, .hero-leadbox .form-group button.picker__button--clear, .hero-leadbox .form-group button.picker__button--close {
+     width: 33%;
+}
+
+
+
+/* */
+
+
+
+/* ========================================================================== 09. HERO SECTION ========================================================================== */
+/*------------------------------------------*/
+/* Hero General 
+/*------------------------------------------*/
+ .hero1 {
+     height: 950px;
+}
+ .hero1.height-800, .hero1.height-800-fix {
+     height: 800px;
+}
+ .hero1 .lead {
+     font-weight: 700;
+     color:#FFF; 
+}
+ .hero1 .btn a {
+     font-size: 17px;
+     color: #ffffff;
+}
+ .hero1 p.small a {
+     font-size: 15px;
+}
+ .hero1 h1 {
+     margin-bottom: 20px;
+     color:#FFF;
+}
+/*------------------------------------------*/
+/* hero1 Closeup 
+/*------------------------------------------*/
+ .closeup-box {
+     position: absolute;
+     bottom: 0;
+     width: 50%;
+}
+ .closeup-box img {
+     float: right;
+     height: 650px;
+}
+ .closeup-box.closeup-right {
+     right: 0;
+}
+ .closeup-box.closeup-right img {
+     float: left;
+}
+/*------------------------------------------*/
+/* hero1 with Lists 
+/*------------------------------------------*/
+ .hero1 .list-unstyled li {
+     font-size: 21px;
+     margin-bottom: 10px;
+     font-weight: 700;
+}
+ .hero1 .list-unstyled li>i {
+     font-size: 32px;
+     font-weight: 700;
+     vertical-align: sub;
+     margin-right: 5px;
+}
+/*------------------------------------------*/
+/* hero1 Dashboard-Img 
+/*------------------------------------------*/
+ .dashboard-box {
+     position: absolute;
+     bottom: -50px;
+     width: 50%;
+}
+ .dashboard-box.dashboard-right {
+     right: 0;
+}
+ .dashboard-box img {
+     height: 600px;
+     padding-left:20px;
+}
+ .owl-dashboard .owl-controls {
+     position: absolute;
+     bottom: 102%;
+     width: 100%;
+}
+ .owl-dashboard .owl-controls .owl-pagination {
+     margin: 0 auto;
+}
+/*------------------------------------------*/
+/* hero1 Devices/Countdown 
+/*------------------------------------------*/
+ .hero1.hero1-devices {
+     height: auto;
+     padding-top: 140px;
+     padding-bottom: 80px;
+}
+ .hero1.hero1-devices .app-image {
+     margin-top: 10px;
+}
+ .hero1.hero1-countdown {
+     height: auto;
+     padding-top: 160px;
+     padding-bottom: 100px;
+}
+/*------------------------------------------*/
+/* hero1 Leadbox 
+/*------------------------------------------*/
+ .hero1-leadbox {
+     height: auto;
+     padding-top: 150px;
+     padding-bottom: 100px;
+}
+ .hero1-leadbox .form-horizontal {
+     padding: 30px 40px 10px;
+     border-radius: 5px;
+     box-shadow: -2px -2px 6px 0 rgba(0,0,0,.1);
+     background-color: #525e6c;
+     background-color: rgba(0, 0, 0, 0.4);
+}
+ .hero1-leadbox .form-horizontal.form-2col {
+     padding: 40px 40px 20px;
+}
+ .hero1-leadbox h5 {
+     font-size: 20px;
+     font-weight: 900;
+}
+ .hero1-leadbox .form-group.w-50 input {
+     display: inline-block;
+     width: 49.5%;
+}
+ .hero1-leadbox .feature-box i {
+     font-size: 50px;
+     font-weight: 400;
+     margin-right: 10px;
+}
+ .hero1-leadbox .feature-box h5, .hero1-leadbox .feature-box p {
+     margin-left: 80px;
+}
+ .hero1-leadbox .feature-box h5 {
+     margin-bottom: 5px;
+}
+ .hero1-leadbox .form-group button.picker__button--today, .hero-leadbox .form-group button.picker__button--clear, .hero-leadbox .form-group button.picker__button--close {
+     width: 33%;
+}
+
+/**/
+
+
+
+
+
+/* ========================================================================== 09. HERO SECTION ========================================================================== */
+/*------------------------------------------*/
+/* Hero General 
+/*------------------------------------------*/
+ .hero2 {
+     height: 950px;
+}
+ .hero2.height-800, .hero2.height-800-fix {
+     height: 800px;
+}
+ .hero2 .lead {
+     font-weight: 700;
+     color:#FFF; 
+}
+ .hero2 .btn a {
+     font-size: 17px;
+     color: #ffffff;
+}
+ .hero2 p.small a {
+     font-size: 15px;
+}
+ .hero2 h1 {
+     margin-bottom: 20px;
+     color:#FFF;
+}
+/*------------------------------------------*/
+/* hero2 Closeup 
+/*------------------------------------------*/
+ .closeup-box {
+     position: absolute;
+     bottom: 0;
+     width: 50%;
+}
+ .closeup-box img {
+     float: right;
+     height: 650px;
+}
+ .closeup-box.closeup-right {
+     right: 0;
+}
+ .closeup-box.closeup-right img {
+     float: left;
+}
+/*------------------------------------------*/
+/* hero2 with Lists 
+/*------------------------------------------*/
+ .hero2 .list-unstyled li {
+     font-size: 21px;
+     margin-bottom: 10px;
+     font-weight: 700;
+}
+ .hero2 .list-unstyled li>i {
+     font-size: 32px;
+     font-weight: 700;
+     vertical-align: sub;
+     margin-right: 5px;
+}
+/*------------------------------------------*/
+/* hero2 Dashboard-Img 
+/*------------------------------------------*/
+ .dashboard-box {
+     position: absolute;
+     bottom: -50px;
+     width: 50%;
+}
+ .dashboard-box.dashboard-right {
+     right: 0;
+}
+ .dashboard-box img {
+     height: 600px;
+     padding-left:20px;
+}
+ .owl-dashboard .owl-controls {
+     position: absolute;
+     bottom: 102%;
+     width: 100%;
+}
+ .owl-dashboard .owl-controls .owl-pagination {
+     margin: 0 auto;
+}
+/*------------------------------------------*/
+/* hero2 Devices/Countdown 
+/*------------------------------------------*/
+ .hero2.hero2-devices {
+     height: auto;
+     padding-top: 140px;
+     padding-bottom: 80px;
+}
+ .hero2.hero2-devices .app-image {
+     margin-top: 10px;
+}
+ .hero2.hero2-countdown {
+     height: auto;
+     padding-top: 160px;
+     padding-bottom: 100px;
+}
+/*------------------------------------------*/
+/* hero2 Leadbox 
+/*------------------------------------------*/
+ .hero2-leadbox {
+     height: auto;
+     padding-top: 150px;
+     padding-bottom: 100px;
+}
+ .hero2-leadbox .form-horizontal {
+     padding: 30px 40px 10px;
+     border-radius: 5px;
+     box-shadow: -2px -2px 6px 0 rgba(0,0,0,.1);
+     background-color: #525e6c;
+     background-color: rgba(0, 0, 0, 0.4);
+}
+ .hero2-leadbox .form-horizontal.form-2col {
+     padding: 40px 40px 20px;
+}
+ .hero2-leadbox h5 {
+     font-size: 20px;
+     font-weight: 900;
+}
+ .hero2-leadbox .form-group.w-50 input {
+     display: inline-block;
+     width: 49.5%;
+}
+ .hero2-leadbox .feature-box i {
+     font-size: 50px;
+     font-weight: 400;
+     margin-right: 10px;
+}
+ .hero2-leadbox .feature-box h5, .hero2-leadbox .feature-box p {
+     margin-left: 80px;
+}
+ .hero2-leadbox .feature-box h5 {
+     margin-bottom: 5px;
+}
+ .hero2-leadbox .form-group button.picker__button--today, .hero-leadbox .form-group button.picker__button--clear, .hero-leadbox .form-group button.picker__button--close {
+     width: 33%;
+}
+
+
+
+
+
+/* ========================================================================== 09. HERO SECTION ========================================================================== */
+/*------------------------------------------*/
+/* Hero General 
+/*------------------------------------------*/
+ .hero3 {
+     height: 950px;
+}
+ .hero3.height-800, .hero3.height-800-fix {
+     height: 800px;
+}
+ .hero3 .lead {
+     font-weight: 700;
+     color:#FFF; 
+}
+ .hero3 .btn a {
+     font-size: 17px;
+     color: #ffffff;
+}
+ .hero3 p.small a {
+     font-size: 15px;
+}
+ .hero3 h1 {
+     margin-bottom: 20px;
+     color:#FFF;
+}
+/*------------------------------------------*/
+/* hero3 Closeup 
+/*------------------------------------------*/
+ .closeup-box {
+     position: absolute;
+     bottom: 0;
+     width: 50%;
+}
+ .closeup-box img {
+     float: right;
+     height: 650px;
+}
+ .closeup-box.closeup-right {
+     right: 0;
+}
+ .closeup-box.closeup-right img {
+     float: left;
+}
+/*------------------------------------------*/
+/* hero3 with Lists 
+/*------------------------------------------*/
+ .hero3 .list-unstyled li {
+     font-size: 21px;
+     margin-bottom: 10px;
+     font-weight: 700;
+}
+ .hero3 .list-unstyled li>i {
+     font-size: 32px;
+     font-weight: 700;
+     vertical-align: sub;
+     margin-right: 5px;
+}
+/*------------------------------------------*/
+/* hero3 Dashboard-Img 
+/*------------------------------------------*/
+ .dashboard-box {
+     position: absolute;
+     bottom: -50px;
+     width: 50%;
+}
+ .dashboard-box.dashboard-right {
+     right: 0;
+}
+ .dashboard-box img {
+     height: 600px;
+     padding-left:20px;
+}
+ .owl-dashboard .owl-controls {
+     position: absolute;
+     bottom: 102%;
+     width: 100%;
+}
+ .owl-dashboard .owl-controls .owl-pagination {
+     margin: 0 auto;
+}
+/*------------------------------------------*/
+/* hero3 Devices/Countdown 
+/*------------------------------------------*/
+ .hero3.hero3-devices {
+     height: auto;
+     padding-top: 140px;
+     padding-bottom: 80px;
+}
+ .hero3.hero3-devices .app-image {
+     margin-top: 10px;
+}
+ .hero3.hero3-countdown {
+     height: auto;
+     padding-top: 160px;
+     padding-bottom: 100px;
+}
+/*------------------------------------------*/
+/* hero3 Leadbox 
+/*------------------------------------------*/
+ .hero3-leadbox {
+     height: auto;
+     padding-top: 150px;
+     padding-bottom: 100px;
+}
+ .hero3-leadbox .form-horizontal {
+     padding: 30px 40px 10px;
+     border-radius: 5px;
+     box-shadow: -2px -2px 6px 0 rgba(0,0,0,.1);
+     background-color: #525e6c;
+     background-color: rgba(0, 0, 0, 0.4);
+}
+ .hero3-leadbox .form-horizontal.form-2col {
+     padding: 40px 40px 20px;
+}
+ .hero3-leadbox h5 {
+     font-size: 20px;
+     font-weight: 900;
+}
+ .hero3-leadbox .form-group.w-50 input {
+     display: inline-block;
+     width: 49.5%;
+}
+ .hero3-leadbox .feature-box i {
+     font-size: 50px;
+     font-weight: 400;
+     margin-right: 10px;
+}
+ .hero3-leadbox .feature-box h5, .hero3-leadbox .feature-box p {
+     margin-left: 80px;
+}
+ .hero3-leadbox .feature-box h5 {
+     margin-bottom: 5px;
+}
+ .hero3-leadbox .form-group button.picker__button--today, .hero-leadbox .form-group button.picker__button--clear, .hero-leadbox .form-group button.picker__button--close {
+     width: 33%;
+}
+
+
+
+
+
+
+
+
+/* ========================================================================== 09. HERO SECTION ========================================================================== */
+/*------------------------------------------*/
+/* Hero General 
+/*------------------------------------------*/
+ .hero4 {
+     height: 950px;
+}
+ .hero4.height-800, .hero4.height-800-fix {
+     height: 800px;
+}
+ .hero4 .lead {
+     font-weight: 700;
+     color:#FFF; 
+}
+ .hero4 .btn a {
+     font-size: 17px;
+     color: #ffffff;
+}
+ .hero4 p.small a {
+     font-size: 15px;
+}
+ .hero4 h1 {
+     margin-bottom: 20px;
+     color:#FFF;
+}
+/*------------------------------------------*/
+/* hero4 Closeup 
+/*------------------------------------------*/
+ .closeup-box {
+     position: absolute;
+     bottom: 0;
+     width: 50%;
+}
+ .closeup-box img {
+     float: right;
+     height: 650px;
+}
+ .closeup-box.closeup-right {
+     right: 0;
+}
+ .closeup-box.closeup-right img {
+     float: left;
+}
+/*------------------------------------------*/
+/* hero4 with Lists 
+/*------------------------------------------*/
+ .hero4 .list-unstyled li {
+     font-size: 21px;
+     margin-bottom: 10px;
+     font-weight: 700;
+}
+ .hero4 .list-unstyled li>i {
+     font-size: 32px;
+     font-weight: 700;
+     vertical-align: sub;
+     margin-right: 5px;
+}
+/*------------------------------------------*/
+/* hero4 Dashboard-Img 
+/*------------------------------------------*/
+ .dashboard-box {
+     position: absolute;
+     bottom: -50px;
+     width: 50%;
+}
+ .dashboard-box.dashboard-right {
+     right: 0;
+}
+ .dashboard-box img {
+     height: 600px;
+     padding-left:20px;
+}
+ .owl-dashboard .owl-controls {
+     position: absolute;
+     bottom: 102%;
+     width: 100%;
+}
+ .owl-dashboard .owl-controls .owl-pagination {
+     margin: 0 auto;
+}
+/*------------------------------------------*/
+/* hero4 Devices/Countdown 
+/*------------------------------------------*/
+ .hero4.hero4-devices {
+     height: auto;
+     padding-top: 140px;
+     padding-bottom: 80px;
+}
+ .hero4.hero4-devices .app-image {
+     margin-top: 10px;
+}
+ .hero4.hero4-countdown {
+     height: auto;
+     padding-top: 160px;
+     padding-bottom: 100px;
+}
+/*------------------------------------------*/
+/* hero4 Leadbox 
+/*------------------------------------------*/
+ .hero4-leadbox {
+     height: auto;
+     padding-top: 150px;
+     padding-bottom: 100px;
+}
+ .hero4-leadbox .form-horizontal {
+     padding: 30px 40px 10px;
+     border-radius: 5px;
+     box-shadow: -2px -2px 6px 0 rgba(0,0,0,.1);
+     background-color: #525e6c;
+     background-color: rgba(0, 0, 0, 0.4);
+}
+ .hero4-leadbox .form-horizontal.form-2col {
+     padding: 40px 40px 20px;
+}
+ .hero4-leadbox h5 {
+     font-size: 20px;
+     font-weight: 900;
+}
+ .hero4-leadbox .form-group.w-50 input {
+     display: inline-block;
+     width: 49.5%;
+}
+ .hero4-leadbox .feature-box i {
+     font-size: 50px;
+     font-weight: 400;
+     margin-right: 10px;
+}
+ .hero4-leadbox .feature-box h5, .hero4-leadbox .feature-box p {
+     margin-left: 80px;
+}
+ .hero4-leadbox .feature-box h5 {
+     margin-bottom: 5px;
+}
+ .hero4-leadbox .form-group button.picker__button--today, .hero-leadbox .form-group button.picker__button--clear, .hero-leadbox .form-group button.picker__button--close {
+     width: 33%;
+}
+
+
+
+
+
+
+
+/* ========================================================================== 09. HERO SECTION ========================================================================== */
+/*------------------------------------------*/
+/* Hero General 
+/*------------------------------------------*/
+ .hero5 {
+     height: 950px;
+}
+ .hero5.height-800, .hero5.height-800-fix {
+     height: 800px;
+}
+ .hero5 .lead {
+     font-weight: 700;
+     color:#FFF; 
+}
+ .hero5 .btn a {
+     font-size: 17px;
+     color: #ffffff;
+}
+ .hero5 p.small a {
+     font-size: 15px;
+}
+ .hero5 h1 {
+     margin-bottom: 20px;
+     color:#FFF;
+}
+/*------------------------------------------*/
+/* hero5 Closeup 
+/*------------------------------------------*/
+ .closeup-box {
+     position: absolute;
+     bottom: 0;
+     width: 50%;
+}
+ .closeup-box img {
+     float: right;
+     height: 650px;
+}
+ .closeup-box.closeup-right {
+     right: 0;
+}
+ .closeup-box.closeup-right img {
+     float: left;
+}
+/*------------------------------------------*/
+/* hero5 with Lists 
+/*------------------------------------------*/
+ .hero5 .list-unstyled li {
+     font-size: 21px;
+     margin-bottom: 10px;
+     font-weight: 700;
+}
+ .hero5 .list-unstyled li>i {
+     font-size: 32px;
+     font-weight: 700;
+     vertical-align: sub;
+     margin-right: 5px;
+}
+/*------------------------------------------*/
+/* hero5 Dashboard-Img 
+/*------------------------------------------*/
+ .dashboard-box {
+     position: absolute;
+     bottom: -50px;
+     width: 50%;
+}
+ .dashboard-box.dashboard-right {
+     right: 0;
+}
+ .dashboard-box img {
+     height: 600px;
+     padding-left:20px;
+}
+ .owl-dashboard .owl-controls {
+     position: absolute;
+     bottom: 102%;
+     width: 100%;
+}
+ .owl-dashboard .owl-controls .owl-pagination {
+     margin: 0 auto;
+}
+/*------------------------------------------*/
+/* hero5 Devices/Countdown 
+/*------------------------------------------*/
+ .hero5.hero5-devices {
+     height: auto;
+     padding-top: 140px;
+     padding-bottom: 80px;
+}
+ .hero5.hero5-devices .app-image {
+     margin-top: 10px;
+}
+ .hero5.hero5-countdown {
+     height: auto;
+     padding-top: 160px;
+     padding-bottom: 100px;
+}
+/*------------------------------------------*/
+/* hero5 Leadbox 
+/*------------------------------------------*/
+ .hero5-leadbox {
+     height: auto;
+     padding-top: 150px;
+     padding-bottom: 100px;
+}
+ .hero5-leadbox .form-horizontal {
+     padding: 30px 40px 10px;
+     border-radius: 5px;
+     box-shadow: -2px -2px 6px 0 rgba(0,0,0,.1);
+     background-color: #525e6c;
+     background-color: rgba(0, 0, 0, 0.4);
+}
+ .hero5-leadbox .form-horizontal.form-2col {
+     padding: 40px 40px 20px;
+}
+ .hero5-leadbox h5 {
+     font-size: 20px;
+     font-weight: 900;
+}
+ .hero5-leadbox .form-group.w-50 input {
+     display: inline-block;
+     width: 49.5%;
+}
+ .hero5-leadbox .feature-box i {
+     font-size: 50px;
+     font-weight: 400;
+     margin-right: 10px;
+}
+ .hero5-leadbox .feature-box h5, .hero5-leadbox .feature-box p {
+     margin-left: 80px;
+}
+ .hero5-leadbox .feature-box h5 {
+     margin-bottom: 5px;
+}
+ .hero5-leadbox .form-group button.picker__button--today, .hero-leadbox .form-group button.picker__button--clear, .hero-leadbox .form-group button.picker__button--close {
+     width: 33%;
+}
+
+
+
+
+
+/* ========================================================================== 09. HERO SECTION ========================================================================== */
+/*------------------------------------------*/
+/* Hero General 
+/*------------------------------------------*/
+ .hero6 {
+     height: 950px;
+}
+ .hero6.height-800, .hero6.height-800-fix {
+     height: 800px;
+}
+ .hero6 .lead {
+     font-weight: 700;
+     color:#FFF; 
+}
+ .hero6 .btn a {
+     font-size: 17px;
+     color: #ffffff;
+}
+ .hero6 p.small a {
+     font-size: 15px;
+}
+ .hero6 h1 {
+     margin-bottom: 20px;
+     color:#FFF;
+}
+/*------------------------------------------*/
+/* hero6 Closeup 
+/*------------------------------------------*/
+ .closeup-box {
+     position: absolute;
+     bottom: 0;
+     width: 50%;
+}
+ .closeup-box img {
+     float: right;
+     height: 650px;
+}
+ .closeup-box.closeup-right {
+     right: 0;
+}
+ .closeup-box.closeup-right img {
+     float: left;
+}
+/*------------------------------------------*/
+/* hero6 with Lists 
+/*------------------------------------------*/
+ .hero6 .list-unstyled li {
+     font-size: 21px;
+     margin-bottom: 10px;
+     font-weight: 700;
+}
+ .hero6 .list-unstyled li>i {
+     font-size: 32px;
+     font-weight: 700;
+     vertical-align: sub;
+     margin-right: 5px;
+}
+/*------------------------------------------*/
+/* hero6 Dashboard-Img 
+/*------------------------------------------*/
+ .dashboard-box {
+     position: absolute;
+     bottom: -50px;
+     width: 50%;
+}
+ .dashboard-box.dashboard-right {
+     right: 0;
+}
+ .dashboard-box img {
+     height: 600px;
+     padding-left:20px;
+}
+ .owl-dashboard .owl-controls {
+     position: absolute;
+     bottom: 102%;
+     width: 100%;
+}
+ .owl-dashboard .owl-controls .owl-pagination {
+     margin: 0 auto;
+}
+/*------------------------------------------*/
+/* hero6 Devices/Countdown 
+/*------------------------------------------*/
+ .hero6.hero6-devices {
+     height: auto;
+     padding-top: 140px;
+     padding-bottom: 80px;
+}
+ .hero6.hero6-devices .app-image {
+     margin-top: 10px;
+}
+ .hero6.hero6-countdown {
+     height: auto;
+     padding-top: 160px;
+     padding-bottom: 100px;
+}
+/*------------------------------------------*/
+/* hero6 Leadbox 
+/*------------------------------------------*/
+ .hero6-leadbox {
+     height: auto;
+     padding-top: 150px;
+     padding-bottom: 100px;
+}
+ .hero6-leadbox .form-horizontal {
+     padding: 30px 40px 10px;
+     border-radius: 5px;
+     box-shadow: -2px -2px 6px 0 rgba(0,0,0,.1);
+     background-color: #525e6c;
+     background-color: rgba(0, 0, 0, 0.4);
+}
+ .hero6-leadbox .form-horizontal.form-2col {
+     padding: 40px 40px 20px;
+}
+ .hero6-leadbox h5 {
+     font-size: 20px;
+     font-weight: 900;
+}
+ .hero6-leadbox .form-group.w-50 input {
+     display: inline-block;
+     width: 49.5%;
+}
+ .hero6-leadbox .feature-box i {
+     font-size: 50px;
+     font-weight: 400;
+     margin-right: 10px;
+}
+ .hero6-leadbox .feature-box h5, .hero6-leadbox .feature-box p {
+     margin-left: 80px;
+}
+ .hero6-leadbox .feature-box h5 {
+     margin-bottom: 5px;
+}
+ .hero6-leadbox .form-group button.picker__button--today, .hero-leadbox .form-group button.picker__button--clear, .hero-leadbox .form-group button.picker__button--close {
+     width: 33%;
+}
+
+
+
+
+
+
+
+/* ========================================================================== 09. HERO SECTION ========================================================================== */
+/*------------------------------------------*/
+/* Hero General 
+/*------------------------------------------*/
+ .hero7 {
+     height: 950px;
+}
+ .hero7.height-800, .hero7.height-800-fix {
+     height: 800px;
+}
+ .hero7 .lead {
+     font-weight: 700;
+     color:#FFF; 
+}
+ .hero7 .btn a {
+     font-size: 17px;
+     color: #ffffff;
+}
+ .hero7 p.small a {
+     font-size: 15px;
+}
+ .hero7 h1 {
+     margin-bottom: 20px;
+     color:#FFF;
+}
+/*------------------------------------------*/
+/* hero7 Closeup 
+/*------------------------------------------*/
+ .closeup-box {
+     position: absolute;
+     bottom: 0;
+     width: 50%;
+}
+ .closeup-box img {
+     float: right;
+     height: 650px;
+}
+ .closeup-box.closeup-right {
+     right: 0;
+}
+ .closeup-box.closeup-right img {
+     float: left;
+}
+/*------------------------------------------*/
+/* hero7 with Lists 
+/*------------------------------------------*/
+ .hero7 .list-unstyled li {
+     font-size: 21px;
+     margin-bottom: 10px;
+     font-weight: 700;
+}
+ .hero7 .list-unstyled li>i {
+     font-size: 32px;
+     font-weight: 700;
+     vertical-align: sub;
+     margin-right: 5px;
+}
+/*------------------------------------------*/
+/* hero7 Dashboard-Img 
+/*------------------------------------------*/
+ .dashboard-box {
+     position: absolute;
+     bottom: -50px;
+     width: 50%;
+}
+ .dashboard-box.dashboard-right {
+     right: 0;
+}
+ .dashboard-box img {
+     height: 600px;
+     padding-left:20px;
+}
+ .owl-dashboard .owl-controls {
+     position: absolute;
+     bottom: 102%;
+     width: 100%;
+}
+ .owl-dashboard .owl-controls .owl-pagination {
+     margin: 0 auto;
+}
+/*------------------------------------------*/
+/* hero7 Devices/Countdown 
+/*------------------------------------------*/
+ .hero7.hero7-devices {
+     height: auto;
+     padding-top: 140px;
+     padding-bottom: 80px;
+}
+ .hero7.hero7-devices .app-image {
+     margin-top: 10px;
+}
+ .hero7.hero7-countdown {
+     height: auto;
+     padding-top: 160px;
+     padding-bottom: 100px;
+}
+/*------------------------------------------*/
+/* hero7 Leadbox 
+/*------------------------------------------*/
+ .hero7-leadbox {
+     height: auto;
+     padding-top: 150px;
+     padding-bottom: 100px;
+}
+ .hero7-leadbox .form-horizontal {
+     padding: 30px 40px 10px;
+     border-radius: 5px;
+     box-shadow: -2px -2px 6px 0 rgba(0,0,0,.1);
+     background-color: #525e6c;
+     background-color: rgba(0, 0, 0, 0.4);
+}
+ .hero7-leadbox .form-horizontal.form-2col {
+     padding: 40px 40px 20px;
+}
+ .hero7-leadbox h5 {
+     font-size: 20px;
+     font-weight: 900;
+}
+ .hero7-leadbox .form-group.w-50 input {
+     display: inline-block;
+     width: 49.5%;
+}
+ .hero7-leadbox .feature-box i {
+     font-size: 50px;
+     font-weight: 400;
+     margin-right: 10px;
+}
+ .hero7-leadbox .feature-box h5, .hero7-leadbox .feature-box p {
+     margin-left: 80px;
+}
+ .hero7-leadbox .feature-box h5 {
+     margin-bottom: 5px;
+}
+ .hero7-leadbox .form-group button.picker__button--today, .hero-leadbox .form-group button.picker__button--clear, .hero-leadbox .form-group button.picker__button--close {
+     width: 33%;
+}
+
+
+
+
+
+/* ========================================================================== 09. HERO SECTION ========================================================================== */
+/*------------------------------------------*/
+/* Hero General 
+/*------------------------------------------*/
+ .hero8 {
+     height: 950px;
+}
+ .hero8.height-800, .hero8.height-800-fix {
+     height: 800px;
+}
+ .hero8 .lead {
+     font-weight: 700;
+     color:#FFF; 
+}
+ .hero8 .btn a {
+     font-size: 17px;
+     color: #ffffff;
+}
+ .hero8 p.small a {
+     font-size: 15px;
+}
+ .hero8 h1 {
+     margin-bottom: 20px;
+     color:#FFF;
+}
+/*------------------------------------------*/
+/* hero8 Closeup 
+/*------------------------------------------*/
+ .closeup-box {
+     position: absolute;
+     bottom: 0;
+     width: 50%;
+}
+ .closeup-box img {
+     float: right;
+     height: 650px;
+}
+ .closeup-box.closeup-right {
+     right: 0;
+}
+ .closeup-box.closeup-right img {
+     float: left;
+}
+/*------------------------------------------*/
+/* hero8 with Lists 
+/*------------------------------------------*/
+ .hero8 .list-unstyled li {
+     font-size: 21px;
+     margin-bottom: 10px;
+     font-weight: 700;
+}
+ .hero8 .list-unstyled li>i {
+     font-size: 32px;
+     font-weight: 700;
+     vertical-align: sub;
+     margin-right: 5px;
+}
+/*------------------------------------------*/
+/* hero8 Dashboard-Img 
+/*------------------------------------------*/
+ .dashboard-box {
+     position: absolute;
+     bottom: -50px;
+     width: 50%;
+}
+ .dashboard-box.dashboard-right {
+     right: 0;
+}
+ .dashboard-box img {
+     height: 600px;
+     padding-left:20px;
+}
+ .owl-dashboard .owl-controls {
+     position: absolute;
+     bottom: 102%;
+     width: 100%;
+}
+ .owl-dashboard .owl-controls .owl-pagination {
+     margin: 0 auto;
+}
+/*------------------------------------------*/
+/* hero8 Devices/Countdown 
+/*------------------------------------------*/
+ .hero8.hero8-devices {
+     height: auto;
+     padding-top: 140px;
+     padding-bottom: 80px;
+}
+ .hero8.hero8-devices .app-image {
+     margin-top: 10px;
+}
+ .hero8.hero8-countdown {
+     height: auto;
+     padding-top: 160px;
+     padding-bottom: 100px;
+}
+/*------------------------------------------*/
+/* hero8 Leadbox 
+/*------------------------------------------*/
+ .hero8-leadbox {
+     height: auto;
+     padding-top: 150px;
+     padding-bottom: 100px;
+}
+ .hero8-leadbox .form-horizontal {
+     padding: 30px 40px 10px;
+     border-radius: 5px;
+     box-shadow: -2px -2px 6px 0 rgba(0,0,0,.1);
+     background-color: #525e6c;
+     background-color: rgba(0, 0, 0, 0.4);
+}
+ .hero8-leadbox .form-horizontal.form-2col {
+     padding: 40px 40px 20px;
+}
+ .hero8-leadbox h5 {
+     font-size: 20px;
+     font-weight: 900;
+}
+ .hero8-leadbox .form-group.w-50 input {
+     display: inline-block;
+     width: 49.5%;
+}
+ .hero8-leadbox .feature-box i {
+     font-size: 50px;
+     font-weight: 400;
+     margin-right: 10px;
+}
+ .hero8-leadbox .feature-box h5, .hero8-leadbox .feature-box p {
+     margin-left: 80px;
+}
+ .hero8-leadbox .feature-box h5 {
+     margin-bottom: 5px;
+}
+ .hero8-leadbox .form-group button.picker__button--today, .hero-leadbox .form-group button.picker__button--clear, .hero-leadbox .form-group button.picker__button--close {
+     width: 33%;
+}
+
+
+
+
+
+/* ========================================================================== 09. HERO SECTION ========================================================================== */
+/*------------------------------------------*/
+/* Hero General 
+/*------------------------------------------*/
+ .hero9 {
+     height: 950px;
+}
+ .hero9.height-800, .hero9.height-800-fix {
+     height: 800px;
+}
+ .hero9 .lead {
+     font-weight: 700;
+     color:#FFF; 
+}
+ .hero9 .btn a {
+     font-size: 17px;
+     color: #ffffff;
+}
+ .hero9 p.small a {
+     font-size: 15px;
+}
+ .hero9 h1 {
+     margin-bottom: 20px;
+     color:#FFF;
+}
+/*------------------------------------------*/
+/* hero9 Closeup 
+/*------------------------------------------*/
+ .closeup-box {
+     position: absolute;
+     bottom: 0;
+     width: 50%;
+}
+ .closeup-box img {
+     float: right;
+     height: 650px;
+}
+ .closeup-box.closeup-right {
+     right: 0;
+}
+ .closeup-box.closeup-right img {
+     float: left;
+}
+/*------------------------------------------*/
+/* hero9 with Lists 
+/*------------------------------------------*/
+ .hero9 .list-unstyled li {
+     font-size: 21px;
+     margin-bottom: 10px;
+     font-weight: 700;
+}
+ .hero9 .list-unstyled li>i {
+     font-size: 32px;
+     font-weight: 700;
+     vertical-align: sub;
+     margin-right: 5px;
+}
+/*------------------------------------------*/
+/* hero9 Dashboard-Img 
+/*------------------------------------------*/
+ .dashboard-box {
+     position: absolute;
+     bottom: -50px;
+     width: 50%;
+}
+ .dashboard-box.dashboard-right {
+     right: 0;
+}
+ .dashboard-box img {
+     height: 600px;
+     padding-left:20px;
+}
+ .owl-dashboard .owl-controls {
+     position: absolute;
+     bottom: 102%;
+     width: 100%;
+}
+ .owl-dashboard .owl-controls .owl-pagination {
+     margin: 0 auto;
+}
+/*------------------------------------------*/
+/* hero9 Devices/Countdown 
+/*------------------------------------------*/
+ .hero9.hero9-devices {
+     height: auto;
+     padding-top: 140px;
+     padding-bottom: 80px;
+}
+ .hero9.hero9-devices .app-image {
+     margin-top: 10px;
+}
+ .hero9.hero9-countdown {
+     height: auto;
+     padding-top: 160px;
+     padding-bottom: 100px;
+}
+/*------------------------------------------*/
+/* hero9 Leadbox 
+/*------------------------------------------*/
+ .hero9-leadbox {
+     height: auto;
+     padding-top: 150px;
+     padding-bottom: 100px;
+}
+ .hero9-leadbox .form-horizontal {
+     padding: 30px 40px 10px;
+     border-radius: 5px;
+     box-shadow: -2px -2px 6px 0 rgba(0,0,0,.1);
+     background-color: #525e6c;
+     background-color: rgba(0, 0, 0, 0.4);
+}
+ .hero9-leadbox .form-horizontal.form-2col {
+     padding: 40px 40px 20px;
+}
+ .hero9-leadbox h5 {
+     font-size: 20px;
+     font-weight: 900;
+}
+ .hero9-leadbox .form-group.w-50 input {
+     display: inline-block;
+     width: 49.5%;
+}
+ .hero9-leadbox .feature-box i {
+     font-size: 50px;
+     font-weight: 400;
+     margin-right: 10px;
+}
+ .hero9-leadbox .feature-box h5, .hero9-leadbox .feature-box p {
+     margin-left: 80px;
+}
+ .hero9-leadbox .feature-box h5 {
+     margin-bottom: 5px;
+}
+ .hero9-leadbox .form-group button.picker__button--today, .hero-leadbox .form-group button.picker__button--clear, .hero-leadbox .form-group button.picker__button--close {
+     width: 33%;
+}
+
+
+
+
+
+
+
+
+
+/*------------------------------------------*/
+/* Hero Video Popup 
+/*------------------------------------------*/
+ .popup-box {
+     position: relative;
+}
+ .popup-box img {
+     max-width: 80%;
+     margin: 0 auto;
+     border-radius: 4px;
+     box-shadow: 0 1px 3px 1px rgba(0,0,0,.2);
+}
+ .popup-box .popup-button {
+     position: absolute;
+     top: 40%;
+     left: 40%;
+}
+ .popup-box .popup-button i {
+     font-size: 50px;
+     margin-top: -22px;
+     color: #ffffff;
+     padding: 23px 24px 22px 35px;
+     background: #56B68B;
+     border-radius: 50%;
+     box-shadow: 0 1px 5px 2px rgba(0,0,0,.29);
+}
+ .big-popup i {
+     font-size: 150px;
+     color: #fff;
+}
+ .big-popup i:hover, .popup-box .popup-button i:hover {
+     -ms-transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+     transform: scale(1.1);
+}
+ .watch-video{
+     font-size: 16px;
+     letter-spacing: 1px;
+     text-transform: uppercase;
+     white-space: nowrap;
+     margin-left: 25px;
+}
+ .watch-video i{
+     font-size: 28px;
+     margin-right: 5px;
+     vertical-align: sub;
+}
+ .watch-video:hover i {
+     transform: scale(1.6);
+     -webkit-transform: scale(1.6);
+     -moz-transform: scale(1.6);
+     -ms-transform: scale(1.6);
+     margin-right: 10px;
+}
+/* ========================================================================== 10. CONTENT SECTION ========================================================================== */
+ .section-header {
+     margin-bottom: 50px;
+}
+ .section-header span {
+     display: block;
+}
+ .content-border {
+     border-bottom: 1px solid #E5E5E5;
+}
+ .content-block h5, .content-block .h5{
+     font-weight: 900;
+     font-size: 20px;
+     line-height: 22px;
+}
+ .content-block .lead {
+     font-size: 20px;
+     line-height: 24px;
+}
+ .content-block img:hover {
+     opacity: 0.8;
+     -webkit-transition:all 0.5s ease-out;
+     -moz-transition:all 0.5s ease-out;
+     -o-transition:all 0.5s ease-out;
+     transition:all 0.5s ease-out;
+}
+ .content-block .img-circle {
+     width: 180px;
+     height: 180px;
+     margin: 0 auto;
+}
+/*------------------------------------------*/
+/* Content Dashboard 
+/*------------------------------------------*/
+ .content-dashboard {
+     overflow-x: hidden;
+}
+ .content-dashboard .dash-left {
+     margin-left: -400px;
+}
+/*------------------------------------------*/
+/* Content Split 
+/*------------------------------------------*/
+ .content-split {
+     position: relative;
+}
+ .content-split .img-block {
+     position: absolute;
+     top: 0;
+     right: 0;
+     background-repeat: no-repeat;
+     background-position: center center;
+     height: 600px;
+     margin: 0px;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+}
+ .content-split .img-block.left-block {
+     left: 0;
+}
+ .content-split .content-block {
+     height: 600px;
+     padding-left: 0;
+     padding-right: 60px;
+}
+/*------------------------------------------*/
+/* Content Spotlight 
+/*------------------------------------------*/
+ .content-spotlight {
+     margin-bottom: 20px;
+}
+ .spotlight-block>figure{
+     height: 500px;
+     position: relative;
+     overflow: hidden;
+}
+ .spotlight-block>.spotlight-text {
+     height: 500px;
+     padding-left: 50px;
+     padding-right: 50px;
+}
+ .spotlight-block>figure>.img-wrap {
+     height: 500px;
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     background-repeat: no-repeat;
+     background-position: center center;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     -webkit-transition:all 0.5s ease-out;
+     -moz-transition:all 0.5s ease-out;
+     -o-transition:all 0.5s ease-out;
+     transition:all 0.5s ease-out;
+}
+ .spotlight-block>figure>.img-wrap:hover {
+     opacity: 0.8;
+     -webkit-transition:all 0.5s ease-out;
+     -moz-transition:all 0.5s ease-out;
+     -o-transition:all 0.5s ease-out;
+     transition:all 0.5s ease-out;
+}
+ .spotlight-block.img-left>.spotlight-text, .spotlight-block.img-right>figure {
+     overflow: visible;
+     z-index: 2;
+}
+ .spotlight-block.img-left>.spotlight-text:after, .spotlight-block.img-right>figure:after{
+     content: '';
+     display: block;
+     position: absolute;
+     width: 20px;
+     height: 100%;
+     left: -10px;
+     top: 0;
+     bottom: 0;
+     background: #fff;
+}
+ .spotlight-block>.spotlight-text h6 {
+     font-size: 17px;
+     margin-bottom: 20px;
+}
+/*------------------------------------------*/
+/* Content Grid 
+/*------------------------------------------*/
+ .content-grid > div {
+     height: 600px;
+     overflow: hidden;
+}
+ .content-grid > div:first-child {
+     padding-right: 5px;
+}
+ .content-grid .lead-block {
+     padding: 80px 40px;
+     margin-bottom: 20px;
+}
+ .content-grid .img-block {
+     height: 100%;
+     background-repeat: no-repeat;
+     background-position: center center;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+}
+
+
+
+
+
+
+
+
+/* ========================================================================== 23. CONTACT SECTION =========================================================================== */
+ .contact a {
+     color: #FFFFFF;
+}
+ .contact ul{
+     padding-left: 0;
+     list-style-type: none;
+}
+ .contact .contact-info li {
+     margin-bottom: 20px;
+     font-size: 15px;
+     line-height: 15px;
+     font-weight: 900;
+}
+ .contact .contact-info li i {
+     font-size: 25px;
+     font-weight: 700;
+     vertical-align: text-top;
+     margin-right: 20px;
+}
+ .contact .contact-info li span {
+     display: block;
+     margin-left: 46px;
+}
+ .contact .form-horizontal {
+     margin-right: 15px;
+     margin-left: 15px;
+}
+ .contact .form-group.w-50 input {
+     display: inline-block;
+     width: 100%;
+}
+ .contact .mini-map {
+     width:100%;
+     height: 300px;
+}
+ .contact .mini-info p{
+     font-size: 15px;
+     line-height: 21px;
+}
+ .contact .map-container {
+     width: 100%;
+     height: 600px;
+}
+ .contact .map-container .map-iframe, .img-wrap .map-iframe {
+     height: 100%;
+     width: 100%;
+}
+ .contact .map-container .map-iframe {
+     pointer-events: none;
+}
+ .contact-divider i{
+     font-size: 40px;
+     font-weight: bold;
+}
+ .contact-divider h5 {
+     font-size: 20px;
+     line-height: 24px;
+     margin: 15px 0 10px;
+}

@@ -1,0 +1,91 @@
+<!-- phpcode no1 starts -->
+
+
+<?php
+/* Set e-mail recipient add your email here */
+$myemail  = "salil.sarambekar@gmail.com";
+
+/* Check all form inputs using check_input function */
+$yourname = check_input($_POST['yourname']);
+$subject  = check_input($_POST['subject']);
+$email    = check_input($_POST['email']);
+
+ /*    $website  = check_input($_POST['website']);   
+       $likeit   = check_input($_POST['likeit']);
+       $how_find = check_input($_POST['how']);      */
+	   
+$comments = check_input($_POST['comments']);
+
+/* Let's prepare the message for the e-mail */
+$message = "AirAgent Hello!
+
+Your contact form has been submitted by:
+
+Name: $yourname
+E-mail: $email
+Comments:
+$comments
+
+End of message
+
+Reguards
+AirAgent
+";
+
+
+/* Functions we used */
+function check_input($data, $problem='')
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    if ($problem && strlen($data) == 0)
+    {
+        echo($problem);
+    }
+    return $data;
+}
+
+?>
+
+
+
+<!-- phpcode no1 ends -->
+
+
+<!--
+
+
+Contact From from index.html should be placed in between these two files so as to use contact form for your mail id change it to Your mail id above to recive mail
+
+step 1 Copy the above php code above contact section in index.html file 
+
+Step 2 Copy the below php code below contact section in index.html file 
+
+step 3 Rename the index.html file to index.php file
+
+now change the link 
+
+http://www.integrityservicehub.com/Testing/Jap/index.html
+
+to
+
+http://www.integrityservicehub.com/Testing/Jap/index.php
+
+
+-->
+
+
+<!-- php code no 2 starts -->
+
+<?php
+/* Send the message using mail() function */
+mail($myemail, $subject, $message);
+
+/* Redirect visitor to the thank you page add the url here */
+header('Location: http://www.integrityservicehub.com//Testing/Jap/thanks.html ');
+exit();
+
+?>
+
+<!-- php code no 2 ends -->
